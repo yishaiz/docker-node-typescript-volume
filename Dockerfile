@@ -2,8 +2,11 @@ FROM node:alpine
 WORKDIR /app
 # COPY ./package.json /APP
 RUN npm install
+RUN npm install -g nodemon
+
 # COPY . .
-CMD ["npm", "start"]
+# CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
 
 # FROM node:12.18.3-alpine
 
