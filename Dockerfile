@@ -5,8 +5,8 @@ RUN npm install
 RUN npm install -g nodemon typescript ts-node-dev
 
 # COPY . .
-# CMD ["npm", "start"]
-CMD ["npm", "run", "dev"]
+CMD ["npm", "start"]
+# CMD ["npm", "run", "dev"]
 
 # FROM node:12.18.3-alpine
 
