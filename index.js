@@ -14,7 +14,7 @@ client.set('visits', 0);
 this.visits = 0;
 app.get('/', (req, res) => {
   client.get('visits', (err, visits) => {
-    const newVisits = parseInt(visits) + 1;
+    const newVisits = parseInt(visits) + 11;
     res.send(`Number of visits is : ${newVisits}`);
 
     client.set('visits', newVisits);
